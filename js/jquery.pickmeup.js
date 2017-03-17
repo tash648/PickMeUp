@@ -917,6 +917,7 @@
 					? (options.default_date === false ? $this.val() : prepared_date[0])
 					: prepared_date[0].join(options.separator)
 			);
+			$this.trigger('input');
 		}
 	}
 	function destroy () {
